@@ -1,0 +1,57 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+vite-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Prisma generated client
+**/prisma/dev.db
+**/prisma/*.db
+**/prisma/*.sqlite
+**/prisma/migrations/
+
+# VSCode files
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.local
+*.log
+.tmp/
+temp/
+
+# Cache
+.cache/
+.next/
+out/
+coverage/
+
+# TypeScript build
+*.tsbuildinfo
+
+# Build artifacts
+*.zip
+*.tar.gz
+
+# OneDrive Sync Conflicts (just in case)
+*.synced
+*.sync-conflict*
