@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import userRoutes from "./routes/user.routes.js";
+import authRoutes from "./routes/auth.routes.js";
 import clientRoutes from "./routes/client.routes.js";
 import invoiceRoutes from "./routes/invoice.routes.js";
 import expenseRoutes from "./routes/expense.routes.js";
@@ -23,6 +24,7 @@ app.get("/health", (req, res) => {
 
 // Routes
 app.use("/users", userRoutes);
+app.use("/auth", authRoutes);
 app.use("/clients", clientRoutes);
 app.use("/invoices", invoiceRoutes);
 app.use("/expenses", expenseRoutes);
